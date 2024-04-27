@@ -1,0 +1,78 @@
+.title {
+    text-align: center;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+  
+ .grid-item {
+    display: inline;
+    align-items: center;
+    height: 400px;
+    width: 460px;
+    justify-content: center;
+    text-align: center;
+    border: solid 1px;
+    margin-bottom: 2px;
+    margin: auto;
+}
+
+.nom_pokemon {
+    font-weight: bold;
+}
+
+.types {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.erreur_search {
+    font-size: 15px;
+}
+
+.stats {
+    margin-top: 4rem;
+}
+
+.resi {
+    font-size: 15px;
+}
+
+.resiBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    margin-top: 5rem;
+}
+
+.evoBlock {
+    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+.green {
+    color: green;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.cyan {
+    color: cyan;
+}
+
+.orange {
+    color: orange;
+}
+
+.violet {
+    color: rgb(143, 15, 143);
+}
