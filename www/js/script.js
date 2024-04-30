@@ -66,7 +66,7 @@ function allPokemonShow() {
         for (let i=1; i<=allPokemonLength-1; i++) {
             document.getElementById("Pokemon").insertAdjacentHTML("beforeend",
                 `<div class="grid-item">
-                    <p class="text-center p-1" id="pokedex_id">N°${allPokemon[i].pokedexId}</p>
+                    <p class="text-center p-1" id="pokedex_id">N°${allPokemon[i].pokedex_id}</p>
                     <p class="text-center" id="nom_pokemon">${allPokemon[i].name.fr}</p>
                     <img class="text-center" id="img_pokemon" width="170px" src="${allPokemon[i].sprites.regular}">
                     <div class="types">
@@ -96,7 +96,7 @@ function sendType(type) {
             for (let i=0; i<allTypesLength; i++) {
                 document.getElementById("Pokemon").insertAdjacentHTML("beforeend",
                     `<div class="grid-item">
-                        <p class="text-center" id="pokedex_id">N°${allTypes.pokemons[i].pokedexId}</p>
+                        <p class="text-center" id="pokedex_id">N°${allTypes.pokemons[i].pokedex_id}</p>
                         <p class="text-center m-0" id="nom_pokemon">${allTypes.pokemons[i].name.fr}</p>
                         <img class="text-center" id="img_pokemon" width="170px" src="${allTypes.pokemons[i].sprites.regular}">
                         <div class="types">
@@ -133,7 +133,7 @@ function ficheShow(pkmn) {
                     <div class="container text-center">
                         <div class="row">
                             <div class="col">
-                                <h2>N°${fiche.pokedexId}</h2>
+                                <h2>N°${fiche.pokedex_id}</h2>
                             </div>
                             <div class="col-6">
                                 <h1>${fiche.name.fr}<h1>
@@ -249,7 +249,7 @@ function sendGen(gen) {
         for (let i=0; i<allGenLength; i++) {
             document.getElementById("Pokemon").insertAdjacentHTML("beforeend",
                 `<div class="grid-item">
-                    <p class="text-center" id="pokedex_id">N°${allGen[i].pokedexId}</p>
+                    <p class="text-center" id="pokedex_id">N°${allGen[i].pokedex_id}</p>
                     <p class="text-center m-0" id="nom_pokemon">${allGen[i].name.fr}</p>
                     <img class="text-center" id="img_pokemon" width="170px" src="${allGen[i].sprites.regular}">
                     <div class="types">
